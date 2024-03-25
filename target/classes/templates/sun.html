@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/style-sun.css">
+  <script>
+      function back(){
+        location.href = "/";
+      }
+  </script>
+  <title>Sun</title>
+</head>
+<body>
+  <nav class="site-nav">
+    <button class="side-menu-trigger">Menu</button>
+    <button class="back" onclick="back();">Back</button>
+    <aside class="side-menu">
+      <ul>
+        <li>ID: <span th:text="${example.id}"></span></li>
+        <li>NAZWA: <span th:text="${example.nazwa}"></span></li>
+        <li>TYP: <span th:text="${example.typ}"></span></li>
+        <li>ŚREDNICA: <span th:text="${example.srednica}"></span></li>
+        <li>OKRES OBIEGU: <span th:text="${example.okresObiegu}"></span></li>
+        <li>ŚREDNIA ODLEGŁOŚĆ: <span th:text="${example.sredniaOdleglosc}"></span></li>
+        <li>MASA: <span th:text="${example.masa}"></span></li>
+        <li>TEMPERATURA: <span th:text="${example.temperatura}"></span></li>
+        <li>SKŁAD ATMOSFERY: <span th:text="${example.skladAtmosfery}"></span></li>
+        <li>KSIĘŻYCE: <span th:text="${example.ksiezyce}"></span></li>
+      </ul>
+    </aside>
+  </nav>
+    <script type="module" src="/scripts/sun.js"></script>
+</body>
+</html>
+
