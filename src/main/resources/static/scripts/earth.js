@@ -29,11 +29,11 @@ function init(){
             moon.position.set(3,0,0);
             //moon.position.set(earth.position.x-3,earth.position.y-2,earth.position.z-2)
 
-            const ambientLight = new THREE.AmbientLight(0xffffff,0.2);
+            const ambientLight = new THREE.AmbientLight(0x909090, 1);
             scene.add(ambientLight);
 
             const pointLight = new THREE.PointLight(0xffffff,1);
-            pointLight.position.set(5,3,5);
+            pointLight.position.set(50,30,50);
             scene.add(pointLight);
 
             camera.position.z = 6;

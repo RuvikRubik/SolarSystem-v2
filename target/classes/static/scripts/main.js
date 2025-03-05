@@ -56,14 +56,16 @@ neptune.userData.parent = "neptune";
 pluto.userData.parent = "pluton";
 moon.userData.parent = "moon";
 
-//swiatło dyrekcyjne
-const light = new THREE.PointLight( 0xffffff, 2, 100 );
 
+
+const light = new THREE.PointLight(0xffffff, 1000, 1000);
+light.position.set(0, 0, 0);
+
+scene.add(light);
 
 scene.add(venus,mercury,earth,mars,sun,pawel2,neptune,uranus,uranusring,jupiter,saturn,saturnring,pluto,moon);
 
-light.position.set( 0, 0, 0 );
-scene.add(light);
+
 
 
 saturnring.rotation.x = 1.6;

@@ -15,7 +15,7 @@ export function createPlanet(Radius, WidthSegment,HeightSegment,UrlTexture,TypeM
             material = new THREE.MeshBasicMaterial( { map: textura } );
             break;
     }
-    
+
     return new THREE.Mesh( geometry, material );
 }
 
